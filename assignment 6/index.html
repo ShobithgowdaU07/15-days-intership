@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Full Stack Developer">
+    <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, React, Portfolio">
+    <meta name="author" content="SHOBITH U GOWDA">
+    <meta property="og:title" content="SHOBITH U GOWDA | Full Stack Developer">
+    <meta property="og:description" content="Welcome to my portfolio website! Here, you can learn more about me, my skills, and the projects I've worked on.">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlLy-9Azg2U7sK7K7hvKZhTK6_VyD-mphtJkQG-ueBMQ&s=10">
+    <meta property="og:url" content="http://127.0.0.1:5500/PROJECT/index.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SHOBITH U GOWDA | Full Stack Developer">
+    <meta name="twitter:description" content="Welcome to my portfolio website! Here, you can learn more about me, my skills, and the projects I've worked on.">
+
+    <link rel="shortcut icon" href="../DAY 3/github.png" type="image/x-icon">
+    <link rel="stylesheet" href="style assi.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">🌕</button>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <h1>Hi, <span class="highlight">I'm SHOBITH U GOWDA</span></h1>
+            <p class="tagline"><strong>I'm a Full Stack Developer. I build applications which are beautiful and easy to access.</strong></p>
+            <div class="hero-buttons">
+                <a href="" class="btn btn-primary">View My Work</a>
+                <a href="" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <figure class="about-image">
+                    <img src="../Assesments/Profile.jpeg" alt="Profile Image" width="150" height="150">
+                    <figcaption>SHOBITH U GOWDA</figcaption>
+                </figure>
+                <div class="about-text">
+                    <p><em>Hello! I'm SHOBITH U GOWDA, a passionate Full Stack Developer.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+               <article class="project-card" data-category="web">
+                <img src="../DAY 3/github.png" alt="Project 1" width="50" height="50">
+                <h3>Weather App</h3>
+                <p>Real-time weather dashboard using OpenWeatherMap API.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span><br>
+                    <span class="tag">API</span>
+                </div>
+                <a href="" class="btn">Live Demo</a><br>
+                <a href="" class="btn">GitHub</a>
+               </article>
+
+               <article class="project-card" data-category="web">
+                <img src="../DAY 3/github.png" alt="Project 2" width="50" height="50">
+                <h3>Task Manager</h3>
+                <p>A simple productivity app for organizing daily tasks with drag-and-drop lists.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span><br>
+                    <span class="tag">UI</span>
+                </div>
+                <a href="" class="btn">Live Demo</a><br>
+                <a href="" class="btn">GitHub</a>
+               </article>
+
+               <article class="project-card" data-category="web">
+                <img src="../DAY 3/github.png" alt="Project 3" width="50" height="50">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio site built with HTML, CSS, and responsive design principles.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span><br>
+                    <span class="tag">CSS</span>
+                </div>
+                <a href="" class="btn">Live Demo</a><br>
+                <a href="" class="btn">GitHub</a>
+               </article>
+
+               <article class="project-card" data-category="web">
+                <img src="../DAY 3/github.png" alt="Project 4" width="50" height="50">
+                <h3>Talking Tom</h3>
+                <p>Real-time talking cat which works with your voice.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span><br>
+                    <span class="tag">API</span>
+                </div>
+                <a href="" class="btn">Live Demo</a><br>
+                <a href="" class="btn">GitHub</a>
+               </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div><br>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <footer>
+                <p><span>&copy; 2026 SHOBITH U GOWDA. Built with HTML, CSS, and JavaScript.</span></p>
+            </footer>
+
+            <nav arial-label="Social Media Links">
+                <a href="">LinkedIn</a>
+                <a href="">GitHub</a>
+            </nav>
+    </main>
+</body>
+</html>
