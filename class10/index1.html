@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>JavaScript Events</h1>
+ <button id="btn">Click Me</button>
+ <button id="hellobtn">Say Hello</button>
+ <p id="message"></p>
+
+ <form action="" id="myform">
+ <input type="text">
+ <button>submit</button>
+ </form>
+ <div id="box">
+ Hover here
+ </div>
+ <input type="text" id="username" placeholder="Type here">
+ <input type="text" id="email">
+
+ <script>
+ const click_button = document.getElementById("btn");
+ click_button.addEventListener("click", function() {
+ alert("Button Clicked!");
+ })
+ click_button.addEventListener("click", function(event){
+ console.log(event);
+ })
+
+//const btn = document.getElementById("hellobtn");
+//const msg = document.getElementById("message");
+//btn.addEventListener("click", function(){
+//msg.textContent = "welcome to JS";
+//});
+ const form = document.getElementById("myform");
+ form.addEventListener("submit", function(event){
+ event.preventDefault();
+ alert("form submitted");
+ })
+
+ const box = document.getElementById("box");
+ box.addEventListener("mouseenter", function(){
+ box.style.background = "orange";
+ });
+ box.addEventListener("mouseleave", function(){
+ box.style.background = "skyblue";
+ })
+
+ const input = document.getElementById("username");
+ input.addEventListener("keydown", function(event){
+ console.log(event.key);
+ })
+
+ const email = document.getElementById("email");
+ email.addEventListener("input", function(event){
+ console.log(event.target.value);
+ })
+
+ </script>
+</body>
+</html>

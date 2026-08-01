@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Greet">Helloo! <span>Monkeyy</span></h1>
+    <h2 data-level="beginner"></h2>
+    <button onclick="changeText()">Change Heading</button><br>
+    <a href="https://www.google.com/">Google</a><br>
+    <img src="../DAY 3/github.png" alt="">
+
+    <script>
+        const result = document.querySelector("h1");
+        console.log(result.textContent);
+        console.log(result.innerHTML);
+        console.log(result.id);
+        console.log(result.className);
+        const value = document.querySelector("h2");
+        console.log(value.getAttribute("data-level"));
+
+        function changeText(){
+            document.getElementById("Greet").innerHTML="I'm <span>Changed</span>";
+            document.getElementById("Greet").style.backgroundColor="red";
+            document.querySelector("h1").classList.add("active");
+
+        }
+        const link = document.querySelector("a");
+        link.href = "https://github.com/";
+        link.textContent = "GitHub";
+        const image = document.querySelector("img");
+        image.src = "cat.png";
+        image.alt="cat image"
+    </script>
+</body>
+</html>

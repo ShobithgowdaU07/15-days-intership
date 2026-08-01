@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+    <div class="project-grid">
+        <p>This is the first</p>
+    </div>
+
+    <script>
+        const heading = document.createElement("h2");
+        heading.textContent="I am a Creator!!";
+        document.getElementById("container").appendChild(heading);
+
+        let newCard = document.createElement("div");
+        newCard.className = "project-card";
+
+        newCard.innerHTML = 
+        `<h3> My website </h3>
+        <p> This is My website </p>`;
+        document.querySelector(".project-grid").appendChild(newCard);
+
+        const card= document.querySelector(".project-grid");
+        card.remove();
+    </script>
+</body>
+</html>

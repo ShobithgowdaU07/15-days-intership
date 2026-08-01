@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Shobith U Gowda's Portfolio</title>
+    <meta name="description" content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="Shobith U Gowda">
+ 
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="Shobith U Gowda | Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="https://Shobith-U-Gowda.png">
+    <meta property="og:url" content="https://Shobith-U-Gowda.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shobith U Gowda | Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+    <title>My Portfolio Shobith-U-Gowda</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">SUG</div>
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="toggle dark button">🌙</button>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" title="Menu">☰</button>
+    </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero-section">
+        <h1>Hi, I'm <span class="highlight">Shobith U Gowda 👋</span></h1>
+         <p class="tagline">I'm a passionate web developer from Bengaluru</p>
+         <div class="hero-button">
+            <a href="#Projects" class="btn btn-primary">View my work</a>
+            <a href="#Contact" class="btn btn-secondary">Contact Me</a>
+         </div>
+
+      </section>
+      <section id="About" class="about-section">
+        <h2>About Me</h2>
+        <figure class="profile-picture">
+          <img src="profile.jpeg" alt="Profile Picture" width="400" height="400" />
+          <figcaption>Shobith U Gowda - Web Developer</figcaption>
+        </figure>
+        <p>I'm a passionate web developer from Bengaluru</p>
+      </section>
+      <section id="Skills" class="skill-section">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-item" data-level="90">HTML</div>
+          <div class="skill-item" data-level="80">CSS</div>
+          <div class="skill-item" data-level="75">JavaScript</div>
+          <div class="skill-item" data-level="60">React</div>
+        </div>
+      </section>
+      <section id="Projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+           <article class="project-card" data-category="web">
+             <img src="project1.png" alt="Weather app screenshot " width="300px">
+           <h3>Weather App</h3>
+           <p>Real-time weather dashboard using OpenWeatherMap API</p>
+           <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">API</span>
+           </div>
+           <a href="#">live Demo</a>
+           <a href="#">GitHub</a>
+           </article> 
+           <article class="project-card" data-category="web">
+             <img src="project1.png" alt="Weather app screenshot " width="300px">
+           <h3>Weather App</h3>
+           <p>Real-time weather dashboard using OpenWeatherMap API</p>
+           <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">API</span>
+           </div>
+           <a href="#">live Demo</a>
+           <a href="#">GitHub</a>
+           </article>
+           <article class="project-card" data-category="web">
+             <img src="project1.png" alt="Weather app screenshot " width="300px">
+           <h3>Weather App</h3>
+           <p>Real-time weather dashboard using OpenWeatherMap API</p>
+           <div class="project-tags">
+           <span class="tag">React</span>
+           <span class="tag">API</span>
+           </div>
+           <a href="#">live Demo</a>
+           <a href="#">GitHub</a>
+           </article>
+        </div>
+      </section>
+      <section id="Contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <form is="contact" action="#" method="post" novalidate>
+          <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required >
+          </div>
+          <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required >
+          </div>
+          <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" row="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message🚀</button>
+          <button type="reset" class="btn btn-secondary">Reset🔄</button>
+        </form>
+        </section>
+        </main>
+        <footer class="site-footer">
+          <p>
+            &copy;<span class="footer-year"></span> Shobith U Gowda.built with HTML & CSS❤️
+          </p>
+        <nav aria-label="socialmedia links">
+          <a href="https://www.linkedin.com/in/shobithugowda" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ShobithgowdaU07" target="_blank">GitHub</a>
+        </nav>
+        </footer>
+        <script src="script.js">
+
+        </script>
+  </body>
+</html>
